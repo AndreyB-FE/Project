@@ -1,0 +1,578 @@
+@import "header.scss";
+@import "variables.scss";
+@import "footer.scss";
+@import "standart.scss";
+@import "moduleWindow.scss";
+
+#intro-section{
+    width: 100%;
+    min-height: 100vh;
+    background: url(../images/mainpage-images/intro-background.jpg)center center / cover no-repeat;
+}
+.intro-gradient{
+    padding-top:20vh;
+    padding-bottom:30px;
+    min-height: 100vh;
+    width: 100%;
+    background: radial-gradient(circle, rgba(17, 85, 113,0.3) 0%, rgba(255, 255, 255,0.3) 100%);
+    .intro-wrap{
+        padding: 3%;
+        padding-bottom: 40px;
+        min-height: 500px;
+        width: 85%;
+        margin: 0 auto;
+        background-color: $headerColorTransperent;
+        border-radius: 20px;
+        .intro-text{
+            h2{
+                margin-left: 10%;
+                color:$commonColor;
+                text-shadow: 0px 0px 20px $aHoverColor;
+            }
+            h5{
+                margin-left: 10%;
+                color: gray;
+            }
+            hr{
+                margin:20px 0 20px 20%;
+                width: 60%;
+                border:none;
+                color:$aHoverColor;
+                background-color: $commonColor;
+                height: 1px;
+            }
+            p{
+                margin: 0 auto;
+                width: 80%;
+                transition: all 1s;
+                text-align: justify;
+                height: 335px;
+                overflow: hidden;
+            }
+            #read-more-button{
+                transition: $transition-duration;
+                font-size:$navFontSize - 5;
+                font-weight: 600;
+                padding:8px 20px 10px;
+                margin-bottom: 50px;
+                display: inline-flex;
+                color:white;
+                background-color: $commonColor;
+                margin-left: 20%;
+                cursor: pointer;
+                border-radius: $buttonBorderRadius;
+                box-shadow: $buttonBoxShadow;
+            }
+            #read-more-button:hover{
+                color:gray;
+                box-shadow:none;
+            }
+        }
+        .best-trips-wrap{
+            .new-trip{
+                a{
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            width: 100%;
+            h2{
+                text-align: center;
+                margin: 0 auto 20px;
+            }
+            p{
+                font-weight: 500;
+                font-size: $navFontSize - 5;
+                text-align: center;
+                height: auto;
+                color:gray;
+            }
+            h3{
+                text-align: center;
+                color: $commonColor;
+                margin: 30px 0;
+            }
+            .best-trip{
+                max-width: 200px;
+                max-height: 300px;
+
+                margin: 0 auto;
+                border-radius: 10px;
+                width: 100%;
+                overflow: hidden;
+
+                img{
+                    transition: $transition-duration;
+                    width: 100%;
+                }
+                
+            }
+        }
+    }
+}
+.wrap-buttons:hover{
+    box-shadow:none;
+}
+.wrap-buttons:hover a{
+    text-decoration: none;
+    color:gray;
+}
+#booking{
+    background-color: #333;
+}
+.wrap-buttons{
+    background-color: $commonColor;
+    border-radius: $buttonBorderRadius;
+    box-shadow: $buttonBoxShadow;
+    transition: $transition-duration;
+    margin: 30px 4%;
+    width: 130px;
+    height: 44px;
+
+    a{
+        text-align: center;
+        display: block;
+        transition: $transition-duration;
+        font-size: $navFontSize - 5;
+        color: white;
+        width: 100%;
+        height: 100%;
+        padding-top: 8px;
+    }
+}
+#our-advantages{
+    padding-top: 70px;
+    padding-bottom: 40px;
+    width: 100%;
+    h2{
+        color:$advantageHeadersColor;
+        text-align: center;
+        margin: 0 30px 30px;
+        
+    }
+    .advantages-wrap{
+        margin: 0 auto;
+        width: 80%;
+        ul{
+            display: flex;
+            height: 95%;
+            flex-direction: column;
+            justify-content: space-between;
+            list-style: none;
+            li{
+                width: 100%;
+                margin: 0 auto;
+                display: flex;
+                .check-mark-block{
+                    display: inline-block;
+                    background-color: #333;
+                    min-width: 50px;
+                    min-height: 50px;
+                    max-height: 50px;
+                    border-radius: 25px;
+                    padding: 13px 0 0 14px;
+                    margin-right: 20px;
+                    i{
+                        font-size: $navFontSize + 3;
+                        color: white;
+                    }
+                }
+                .advantage-text{
+                    
+                    display: inline-block;
+                    h6{
+                        text-decoration: underline;
+                        color:$advantageHeadersColor;
+                        font-size: $navFontSize - 3;
+                    }
+                    p{
+                        color:#333;
+                        font-size: $navFontSize - 5;
+                    }
+                }
+            }
+            li:nth-child(1){
+                margin: 30px auto 10px auto;
+            }
+        }
+        .book-advantage{
+            height: 100%;
+            width: 100%;
+            padding: 30px 0;
+            .book-advantage-container{
+                min-height: 540px;
+                background:url(../images/mainpage-images/booking.jpg)center center / cover no-repeat;
+                margin: 0 auto;
+                height: 100%;
+                max-width: 400px;
+                border-radius: $buttonBorderRadius + 13;
+                .book-container-gradient{
+                    width: 100%;
+                    height: 100%;
+                    min-height: 540px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    border-radius: inherit;
+                    background-color: $gradientColor;
+                }
+                .book-advantage-container-text{
+                    color:white;
+                    width: 90%;
+                    margin: 0 auto;
+                    text-align: center;
+                    text-shadow: $buttonBoxShadow;
+                    h3{
+                        color:$headerColor;
+                    }
+                }
+                #booking{
+                    margin: 0 auto;
+                    align-self: flex-end;
+                    border: 2px solid white;
+                    background-color: $gradientColor;
+                    box-shadow: none;
+                }
+                #booking:hover{
+                    border-color: gray;
+                }
+            }
+        }
+    }
+}
+
+#new-guide{
+    margin-bottom: 60px;
+    width: 100%;
+    min-height: 50vh;
+    background: url(../images/mainpage-images/guide-background.jpg) center center / cover no-repeat;
+    background-attachment: fixed;
+    .guide-gradient{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        min-height: 50vh;
+        background-color: $gradientColor;
+        justify-content: center;
+        align-items: center;
+        .wrap-buttons{
+            margin: 30px auto;
+            align-self: flex-end;
+            border: 2px solid white;
+            background-color: $gradientColor;
+            box-shadow: none;
+        }
+        .wrap-buttons:hover{
+            border-color: gray;
+        }
+        .guide-container{
+            border-radius: 20px;
+            border:3px solid white;
+            margin: 70px auto;
+            max-width: 400px;
+            width: 80%;
+            height: 85%;
+            .text-guide-container{
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                .guide-text{
+                    text-shadow: $buttonBoxShadow;
+                    h3{
+                        margin: 30px auto 20px;
+                        width: 80%;
+                        color: $aHoverColor;
+                        text-align: center;
+                    }
+                    h6{
+                        font-size: $navFontSize ;
+                        color:white;
+                        width: 90%;
+                        margin: 5px auto;
+                    }
+                    hr{
+                        margin: 0 auto;
+                        width: 90%;
+                        background-color: $aHoverColor;
+                    }
+                    p{
+                        color:white;
+                        margin: 20px auto;
+                        font-size: $navFontSize - 5;
+                        text-align: justify;
+                    }
+                }
+            }
+            .flex-images{
+                height: 100%;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                padding: 30px 0;
+                .guide-image-container{
+                    border-radius:20px;
+                    width: 100%;
+                    max-width: 400px;
+                    min-height: 540px;
+                    height: 100%;
+                    color:white;
+                    background: url(../images/mainpage-images/trekking-image.jfif)center center/cover no-repeat;
+                    border: 1px solid $headerColorTransperent;
+                    .guide-image-gradient{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-around;
+                        width: 100%;
+                        height: 100%;
+                        border-radius: inherit;
+                        background-color: $gradientColor;
+                        h2{
+                            width: 90%;
+                            margin: 0 auto;
+                            text-align: center;
+                        }
+                        p{
+                            font-style: italic;
+                            padding:10px 10%;
+                            
+                        }
+                        .wrap-buttons{
+                            width: 150px;
+                            margin: 50px auto 20px;
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+}
+
+#sub-newsletter{
+    transition: $transition-duration;
+    max-width: 400px;
+    width: 80%;
+    border-radius: 20px;
+    margin: 20px auto;
+    background: url(../images/mainpage-images/subscribe-background.jpg)center center/cover no-repeat;
+    .sub-gradient{
+        transition: $transition-duration;
+        border-radius: inherit;
+        width: 100%;
+        height: 100%;
+        min-height: 540px;
+        background-color: $gradientColor;
+        .sub-container{
+            padding:30px 0;
+            margin: 0 auto;
+            width: 80%;
+            height: 100%;
+            .sub-text{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                h3{
+                    color:$aHoverColor;
+                    text-align: center;
+                }
+                p{
+                    color:white;
+                    text-align: center;
+                }
+            }
+                .sub-form{
+    
+                    
+                    form{
+                        width: 100%;
+                        .row{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            
+                        }
+                        .sub-input{
+                            max-width: 350px;
+                            padding:3px;
+                            font-size: $navFontSize - 6;
+                            width: 100%;
+                            margin: 20px 0;
+                            height: 44px;
+                            min-width: 100px;
+                            border-radius: $buttonBorderRadius;
+                            border:1px solid $commonColor;
+                            transition:$transition-duration;
+                        }
+                        .sub-input:focus{
+                            border:3px solid $commonColor;
+                            outline:none;
+                        }
+                        button{
+                            max-width: 300px;
+                            width: 100%;
+                            transition: $transition-duration;
+                            margin: 20px 0;
+                            background-color: $commonColor;
+                            color: white;
+                            border-radius: $buttonBorderRadius;
+                            font-size: $navFontSize - 5;
+                            padding:8px 20px 10px;
+                            border:none;
+                            box-shadow: $buttonBoxShadow;
+                            outline: none;
+                        }
+                        button:hover{
+                            box-shadow: none;
+                            color:gray;
+                        }
+                    }
+                }
+        }
+    }
+}
+.input-class{
+    display: flex;
+    justify-content: center;
+}
+.sub-alert{
+    position: fixed;
+    top: 130px;
+    right: 30px;
+}
+
+#call-back{
+    border:1px solid $commonColor;
+    max-width: 400px;
+    border-radius: 20px;
+    background-color: rgb(233, 233, 233);;
+    width: 60%;
+    margin: 50px auto;
+    h2{
+        width: 90%;
+        margin: 20px auto 10px;
+        text-align: center;
+        color: $aHoverColor;
+    }
+    p{
+        width: 90%;
+        margin: 0 auto;
+        color: $commonColor;
+        text-align: center;
+    }
+    input{
+        max-width: 350px;
+        padding:3px;
+        font-size: $navFontSize - 6;
+        width: 100%;
+        margin: 20px 0;
+        height: 44px;
+        min-width: 100px;
+        border-radius: $buttonBorderRadius;
+        border:1px solid $commonColor;
+        transition:$transition-duration;
+        outline: none;
+    }
+    input:focus{
+        border-width: 3px;
+    }
+    .input-class{
+        margin: 0 auto;
+    }
+    button{
+        max-width: 300px;
+        width: 90%;
+        transition: $transition-duration;
+        margin: 20px auto;
+        background-color: $commonColor;
+        color: white;
+        border-radius: $buttonBorderRadius;
+        font-size: $navFontSize - 5;
+        padding:8px 20px 10px;
+        border:none;
+        box-shadow: $buttonBoxShadow;
+        outline: none;
+    }
+}
+
+
+
+@media (min-width:490px){
+    #our-advantages .advantages-wrap ul li{
+        width: 80%;
+        margin:0 auto;
+    }
+    #our-advantages .advantages-wrap ul li:nth-child(1){
+        margin: 30px auto 10px;
+    }
+}
+@media (min-width:769px){
+    .burger{
+        display: none;
+    }
+    header nav{
+        display: flex;
+    }
+    #our-advantages .advantages-wrap .book-advantage .book-advantage-container{
+        margin: 0 0;
+    }
+    #sub-newsletter .sub-gradient{
+        min-height: auto;
+    }
+    #sub-newsletter{
+        max-width:2560px;
+    }
+    #new-guide .guide-gradient .guide-container{
+        max-width: 2560px;
+        width: 70%;
+    }
+    #our-advantages .advantages-wrap ul li{
+        width: auto;
+    }
+    #our-advantages .advantages-wrap ul li:nth-child(1){
+        margin: 30px auto 10px;
+    }
+    #button-up{
+        font-size: $navFontSize + 10;
+        width: 63px;
+        bottom: 50px;
+        right: 50px;
+    }
+    #call-back{
+        max-width: 2560px;
+    }
+}
+@media (min-width:992px){
+    #our-advantages .advantages-wrap ul li{
+        width: 80%;
+        margin-left: 20%;
+    }
+    #our-advantages .advantages-wrap ul li:nth-child(1){
+        margin: 30px 0 10px 20%;
+    }
+    #new-guide .guide-gradient .guide-container .text-guide-container{
+        width: 90%;
+        margin-left: 10%;
+    }
+}
+@media (min-width:1200px){
+    #new-guide .guide-gradient .guide-container .flex-images .guide-image-container{
+        width: 80%;
+        margin-left: 12%;
+    }
+    #new-guide .guide-gradient .guide-container .text-guide-container{
+        width: 70%;
+        margin-left: 30%;
+    }
+    #our-advantages .advantages-wrap{
+        margin: 0 0 0 15%;
+    }
+}
+@media (max-width:490px){
+    .intro-gradient .intro-wrap .best-trips-wrap .wrap-buttons{
+        width: 80%;
+        margin: 20px auto;
+        text-align: center;
+    }
+}

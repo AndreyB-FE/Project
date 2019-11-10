@@ -1,0 +1,515 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../dist/trips.css">
+    <title>Final Front-End Project</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-logo-small">
+        <a href="../index.html"><img src="../images/logo.png" alt=""></a>
+      </div>
+      <div class="row">
+      <div class="col-sm-12 nav-bar">
+        <nav>
+          <div class="header-logo">
+              <a href="../index.html"><img src="../images/logo.png" alt="logo"></a>
+          </div>
+          <ul>
+            <li class="nav-buttons"><a class="nav-links" href="#">Contacts</a></li>
+            <li class="nav-buttons"><a class="nav-links" href="../index.html#call-back">Help</a></li>
+            <li class="nav-buttons"><a class="nav-links" href="#">Find Your Trip</a></li>
+            <li class="nav-buttons"><a class="nav-links" href="./booking.html">Booking</a></li>
+          </ul>
+          <div class="phone-number">
+            <p>+375(33)386-56-21</p>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div class="burger">
+        <input id="menu-toggle" type="checkbox" />
+        <label class="menu-button" for="menu-toggle">
+          <span></span>
+        </label>
+        <ul class="menu-box">
+          <li><a class="menu-item adding-burger-page" href="#">Contact</a></li>
+          <li><a class="menu-item adding-burger-page" id="help-call-back" href="../index.html#call-back">Help</a></li>
+          <li><a class="menu-item adding-burger-page" href="#">Find Your Trip</a></li>
+          <li><a class="menu-item adding-burger-page" href="./booking.html">Booking</a></li>
+        </ul>
+    </div>
+  </header>
+    <section id="hot-trips">
+      <h2>Hot Trips</h2>
+      <hr>
+      <div class="row">
+        <div class="col-sm-12 col-md-4">
+          <a href="./booking.html">
+            <div class="hot-trip-card">
+              <h6>From: Phoenix</h6>
+              <h3>Sidney</h3>
+              <span><i class="fas fa-plane-departure"></i>Sun, Nov 24</span><br>
+              <span><i class="fas fa-plane-arrival"></i>Thu, Nov 28</span><br>
+              <div class="card-text">Voluptates vero tempora eius eaque obcaecati expedita a ipsam.</div>
+              <hr>
+              <p class="cost-hot-trip">From: </p><p class="cost-hot-trip curency">US$921</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-sm-12 col-md-4">
+            <a href="./booking.html">
+                <div class="hot-trip-card">
+                  <h6>From: New-york</h6>
+                  <h3>Rome</h3>
+                  <span><i class="fas fa-plane-departure"></i>Sun, Nov 24</span><br>
+                  <span><i class="fas fa-plane-arrival"></i>Thu, Nov 28</span><br>
+                  <div class="card-text">Quaerat nemo iste, sapiente placeat aut doloribus error corporis atque nobis.</div>
+                  <hr>
+                  <p class="cost-hot-trip">From: </p><p class="cost-hot-trip curency">US$432</p>
+                </div>
+              </a>
+        </div>
+        <div class="col-sm-12 col-md-4">
+            <a href="./booking.html">
+                <div class="hot-trip-card">
+                  <h6>From: Austin</h6>
+                  <h3>Tokio</h3>
+                  <span><i class="fas fa-plane-departure"></i>Sun, Nov 24</span><br>
+                  <span><i class="fas fa-plane-arrival"></i>Thu, Nov 28</span><br>
+                  <div class="card-text">Consectetur adipisicing elit. Fugit sapiente omnis iure nulla, modi voluptate?</div>
+                  <hr>
+                  <p class="cost-hot-trip">From: </p><p class="cost-hot-trip curency">US$501</p>
+                </div>
+              </a>
+        </div>
+      </div>
+      <hr>
+    </section>
+    <section id="all-trips">
+      <h2>Our Trips</h2>
+      <div class="row mt-4">
+        <div class="col-sm-12 col-md-6 col-xl-3">
+          <div class="trip-wrap">
+            <a href="./booking.html"><div class="trip-image" style="background: url(../images/mainpage-images/best-trips/australia.jpg) center center / cover no-repeat"></div></a>
+            <div class="trip-text">
+              <h6>Australia</h6>
+              <div class="reviews">4.8 / 5</div><span> (400 reviews)</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-xl-3">
+            <div class="trip-wrap">
+              <a href="./booking.html"><div class="trip-image" style="background: url(../images/mainpage-images/best-trips/japan.jpg) center center / cover no-repeat"></div></a>
+              <div class="trip-text">
+                <h6>Japan</h6>
+                <div class="reviews">4.7 / 5</div><span> (386 reviews)</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-xl-3">
+              <div class="trip-wrap">
+                <a href="./booking.html"><div class="trip-image" style="background: url(../images/mainpage-images/best-trips/italy.jpg) center center / cover no-repeat"></div></a>
+                <div class="trip-text">
+                  <h6>Italy</h6>
+                  <div class="reviews">4.6 / 5</div><span> (521 reviews)</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-xl-3">
+                <div class="trip-wrap">
+                  <a href="./booking.html"><div class="trip-image" style="background: url(../images/trips-images/norway.jpg) center center / cover no-repeat;"></div></a>
+                  <div class="trip-text">
+                    <h6>Norway</h6>
+                    <div class="reviews">4.6 / 5</div><span> (253 reviews)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6 col-xl-3">
+                <div class="trip-wrap">
+                  <a href="./booking.html"><div class="trip-image" style="background: url(../images/trips-images/russia.jpg) center center / cover no-repeat;"></div></a>
+                  <div class="trip-text">
+                    <h6>Russia</h6>
+                    <div class="reviews">4.4 / 5</div><span> (121 reviews)</span>
+                  </div>
+                </div>
+              </div>
+            <div class="col-sm-12 col-md-6 col-xl-3">
+              <div class="trip-wrap">
+                <a href="./booking.html"><div class="trip-image" style="background: url(../images/trips-images/holland.jpg) center center / cover no-repeat;"></div></a>
+                <div class="trip-text">
+                  <h6>Holland</h6>
+                  <div class="reviews">4.4 / 5</div><span> (83 reviews)</span>
+                </div>
+              </div>
+            </div>
+          <div class="col-sm-12 col-md-6 col-xl-3">
+            <div class="trip-wrap">
+              <a href="./booking.html"><div class="trip-image" style="background: url(../images/trips-images/india.jpg) center center / cover no-repeat;"></div></a>
+              <div class="trip-text">
+                <h6>India</h6>
+                <div class="reviews">4.4 / 5</div><span> (332 reviews)</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-xl-3">
+            <div class="trip-wrap">
+              <a href="./booking.html"><div class="trip-image" style="background: url(../images/trips-images/singapore.jpg) center center / cover no-repeat;"></div></a>
+              <div class="trip-text">
+                <h6>singapore</h6>
+              <div class="reviews">4.3 / 5</div><span> (191 reviews)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <a name="guides"></a>
+    <section id="all-guides">
+      <h2>Check Out Our New Guides!!</h2>
+     <div class="row">
+        <div class="col-sm-12 col-lg-6">
+            <div class="guide-wrap">
+                <div class="row">
+                    <div class="guide-wrap-card">
+                        <div class="col-sm-12 col-md-6">
+                            <div class="guide-text">
+                              <h3>Norway</h3>
+                              <p class="places-guide">Group: <span>10/14</span></p>
+                              <p class="data-guide">Next guide - Nov 14</p>
+                              <span class="duration">Duration: </span><span>10 days</span>
+                              <br><span class="duration">Program: </span><span>Extreme</span> 
+                            </div>
+                          </div>
+                          <div class="col-sm-12 col-md-6 p-0">
+                            <div class="guide-image">
+                              <a href="./booking.html"><img src="../images/booking-page/extreme.jpg" alt=""></a>
+                            </div>
+                          </div>
+                    </div>
+                  </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-lg-6">
+              <div class="guide-wrap">
+                  <div class="row">
+                      <div class="guide-wrap-card">
+                          <div class="col-sm-12 col-md-6">
+                              <div class="guide-text">
+                                <h3>Austria</h3>
+                                <p class="places-guide">Group: <span>8/12</span></p>
+                                <p class="data-guide">Next guide - Nov 18</p>
+                                <span class="duration">Duration: </span><span>8 days</span>
+                                <br><span class="duration">Program: </span><span>Hiking</span>
+                              </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 p-0">
+                              <div class="guide-image">
+                                <a href="./booking.html"><img src="../images/trips-images/austria.jpg" alt=""></a>
+                              </div>
+                            </div>
+                      </div>
+                    </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-lg-6">
+                <div class="guide-wrap">
+                    <div class="row">
+                        <div class="guide-wrap-card">
+                            <div class="col-sm-12 col-md-6">
+                                <div class="guide-text">
+                                  <h3>Chile</h3>
+                                  <p class="places-guide">Group: <span>12/14</span></p>
+                                  <p class="data-guide">Next guide - Nov 21</p>
+                                  <span class="duration">Duration: </span><span>5 days</span> 
+                                  <br><span class="duration">Program: </span><span>Calm</span>
+                               </div>
+                              </div>
+                              <div class="col-sm-12 col-md-6 p-0">
+                                <div class="guide-image">
+                                  <a href="./booking.html"><img src="../images/trips-images/chile.jpg" alt=""></a>
+                                </div>
+                              </div>
+                        </div>
+                      </div>
+                </div>
+              </div>
+        <div class="col-sm-12 col-lg-6">
+            <div class="guide-wrap">
+              <div class="row">
+                <div class="guide-wrap-card">
+                  <div class="col-sm-12 col-md-6">
+                    <div class="guide-text">
+                      <h3>Brasil</h3>
+                      <p class="places-guide">Group: <span>13/16</span></p>
+                      <p class="data-guide">Next guide - Nov 13</p>
+                      <span class="duration">Duration: </span><span>9 days</span> 
+                      <br><span class="duration">Program: </span><span>Calm</span>
+                    </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 p-0">
+                      <div class="guide-image">
+                        <a href="./booking.html"><img src="../images/trips-images/brasil.jpg" alt=""></a>
+                    </div>
+                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-lg-6">
+          <div class="guide-wrap">
+            <div class="row">
+              <div class="guide-wrap-card">
+                <div class="col-sm-12 col-md-6">
+                  <div class="guide-text">
+                    <h3>India</h3>
+                    <p class="places-guide">Group: <span>13/14</span></p>
+                    <p class="data-guide">Next guide - Nov 12</p>
+                  <span class="duration">Duration: </span><span>11 days</span>  
+                  <br><span class="duration">Program: </span><span> Hiking </span>
+                </div>
+                </div>
+                <div class="col-sm-12 col-md-6 p-0">
+                  <div class="guide-image">
+                     <a href="./booking.html"><img src="../images/trips-images/india.jpg" alt=""></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+         <div class="col-sm-12 col-lg-6">
+          <div class="guide-wrap">
+            <div class="row">
+             <div class="guide-wrap-card">
+              <div class="col-sm-12 col-md-6">
+                <div class="guide-text">
+                  <h3>Poland</h3>
+                  <p class="places-guide">Group: <span>10/11</span></p>
+                  <p class="data-guide">Next guide - Nov 15</p>
+                  <span class="duration">Duration: </span><span>14 days</span> 
+                  <br><span class="duration">Program: </span><span>Extreme</span>
+                </div>
+                </div>
+                <div class="col-sm-12 col-md-6 p-0">
+                  <div class="guide-image">
+                    <a href="./booking.html"><img src="../images/trips-images/poland.jpg" alt=""></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+     </div>
+    </section>
+    <footer>
+      <section id="small-footer" class="pt-5">
+        <div class="footer-container-collapse">
+            <div class="row">
+                <div class="col-sm-12 p-0">
+                    <div class="accordion" id="accordionExample">
+                        <div class="card">
+                          <div class="card-header d-flex align-items-center" id="headingOne">
+                              <i class="far fa-compass"></i>
+                            <h5 class="mb-0">
+                              <button class="btn btn-link text-uppercase" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                navigation
+                              </button>
+                            </h5>
+                          </div>
+                          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                              <ul>
+                                <li><a href="./booking.html">Book your trip</a></li>
+                                <li><a href="#">Read about guides and trips</a></li>
+                                <li><a href="#">Contact us</a></li>
+                                <li><a href="../index.html#call-back">Help</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="card-header d-flex align-items-center" id="headingTwo">
+                              <i class="fas fa-user"></i>
+                            <h5 class="mb-0">
+                              <button class="btn btn-link collapsed text-uppercase" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                subscribe
+                              </button>
+                            </h5>
+                          </div>
+                          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                            <div class="card-body">
+                              <form action="#" method="POST" id="footer-form">
+                                <div class="form-container">
+                                  <div class="row">
+                                      <div class="col-sm-12">
+                                          <div class="form-wrap">
+                                              <input type="email" placeholder="Enter email" id="footer-email">
+                                          </div>
+                                      </div>
+                                      <div class="col-sm-12">
+                                        <div class="for-wrap">
+                                            <button type="submit" id="sub-footer-email">Subscribe</button>
+                                        </div>
+                                      </div>
+                                      <div class="col-sm-12">
+                                        <p class="subscribe-text">Dolor sit amet consectetur adipisicing elit. Autem ab eum quod quae nostrum, consequatur dignissimos dolorum deserunt atque fugiat reprehenderit amet nemo cum placeat perferendis. Vel eius illo necessitatibus? Esse reiciendis mollitia magnam! Architecto, saepe labore!</p>
+                                      </div>
+                                  </div>
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="card-header d-flex align-items-center" id="headingThree">
+                              <i class="fas fa-users"></i>
+                            <h5 class="mb-0">
+                              <button class="btn btn-link collapsed text-uppercase" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                social-networks
+                              </button>
+                            </h5>
+                          </div>
+                          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                            <div class="card-body d-flex">
+                                <div class="card-body">
+                                    <div id="social-icons">
+                                        <div class="social-networks facebook">
+                                            <a href=""><div class="i-container"><i class="fab fa-facebook-f"></i></div> <p> We Are On Facebook</p> </a>
+                                        </div>
+                                        <div class="social-networks instagram">
+                                            <a href=""><div class="i-container"><i class="fab fa-instagram"></i></div><p>Follow Us In Instagram</p> </a>
+                                        </div>
+                                        <div class="social-networks youtube">
+                                            <a href=""><div class="i-container"><i class="fab fa-youtube"></i></div><p>Subscribe Us On Youtube</p> </a>
+                                        </div>
+                                        <div class="social-networks twitter">
+                                            <a href=""><div class="i-container"><i class="fab fa-twitter"></i></div><p>Tweet Us On Twitter</p> </a>
+                                        </div>
+                                    </div>
+                                    <p class="social-p">We're grateful for your development assistance of our community!</p>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="logo-footer">
+                      <div class="logo-image">
+                          <a href="../index.html"><img src="../images/logo.png" alt="logo"></a>
+                      </div>
+                      <div class="copyright">
+                        <p>&copy; Travel Life <br>All right reserved 2019 </p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="big-footer">
+      <div class="row">
+          <div class="col-lg-3">
+              <h5 class="text-uppercase">navigation</h5>
+              <ul>
+                  <li><a href="./booking.html">Book your trip</a></li>
+                  <li><a href="#">Read about guides and trips</a></li>
+                  <li><a href="#">Contact us</a></li>
+                  <li><a href="../index.html#call-back">Help</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3">
+              <h5 class="text-uppercase">subscribe</h5>
+              <div class="row">
+                  <form action="#" method="POST" id="big-hooter-form">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="form-wrap">
+                                <input type="email" placeholder="Enter email" id="footer-email">
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                          <div class="for-wrap">
+                              <button type="submit" id="sub-footer-email">Subscribe</button>
+                          </div>
+                        </div>
+                        <div class="col-sm-12">
+                          <p class="subscribe-text">Dolor sit amet consectetur adipisicing elit. Autem ab eum quod quae nostrum, consequatur dignissimos dolorum deserunt atque fugiat reprehenderit amet nemo cum placeat perferendis. Vel eius illo necessitatibus? Esse reiciendis mollitia magnam! Architecto, saepe labore!</p>
+                        </div>
+                    </div>
+                  </form>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <h5 class="text-uppercase">social-networks</h5>
+              <div id="social-icons">
+                  <div class="social-networks facebook">
+                      <a href=""><div class="i-container"><i class="fab fa-facebook-f"></i></div> <p> We Are On Facebook</p> </a>
+                  </div>
+                  <div class="social-networks instagram">
+                      <a href=""><div class="i-container"><i class="fab fa-instagram"></i></div><p>Follow Us In Instagram</p> </a>
+                  </div>
+                  <div class="social-networks youtube">
+                      <a href=""><div class="i-container"><i class="fab fa-youtube"></i></div><p>Subscribe Us On Youtube</p> </a>
+                  </div>
+                  <div class="social-networks twitter">
+                      <a href=""><div class="i-container"><i class="fab fa-twitter"></i></div><p>Tweet Us On Twitter</p> </a>
+                  </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="big-footer-logo">
+                  <a href="../index.html"><img src="../images/logo.png" alt=""></a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                  
+              </div>
+            </div>
+      </div>
+      <div class="copyright">
+          <p>&copy; Travel Life All right reserved 2019 </p>
+        </div>
+    </section>
+    </footer>
+    <div id="adding-div">
+      <div id="close-button">
+          <i class="fas fa-times"></i>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 contacts-block">
+          <h5><pre>Phone number:    +375(33)386-56-21</pre></h5>
+          <h5><pre>Address:   st.Gorkogo 1</pre></h5>
+          <h5><pre>E-mail:    <a href="mailto:andrei.228.bogushevich@gmail.com">andrei.228.bogushevich@gmail.com</a></pre></h5>
+          <div class="iframe-transperency-block">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2362.790274335486!2d23.828614315851286!3d53.68636318005166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dfd62118416b29%3A0x21ff2d48b840c760!2z0YPQuy4g0JzQsNC60YHQuNC80LAg0JPQvtGA0YzQutC-0LPQviAxLCDQk9GA0L7QtNC90L4gMjMwMDIz!5e0!3m2!1sru!2sby!4v1572700235964!5m2!1sru!2sby"  frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+          </div>
+          <div id="social-icons">
+              <div class="social-networks facebook">
+                  <a href=""><i class="fab fa-facebook-f"></i></a>
+              </div>
+              <div class="social-networks instagram">
+                  <a href=""><i class="fab fa-instagram"></i></a>
+              </div>
+              <div class="social-networks youtube">
+                  <a href=""><i class="fab fa-youtube"></i></a>
+              </div>
+              <div class="social-networks twitter">
+                  <a href=""><i class="fab fa-twitter"></i></a>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="btn" id="button-up">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/e17f2cfa96.js" crossorigin="anonymous"></script>
+    <script src="../JS/booking.js"></script>
+    <script src="../JS/footerForm.js"></script>
+  </body>
+</html>

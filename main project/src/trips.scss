@@ -1,0 +1,178 @@
+@import "header.scss";
+@import "variables.scss";
+@import "footer.scss";
+@import "standart.scss";
+@import "moduleWindow.scss";
+
+$commonColorTransperent: rgba(17, 85, 113,.5);
+
+
+#hot-trips{
+    hr{
+        background-color: $aHoverColor;
+    }
+    background-color: $headerColorTransperent;
+    margin: 20vh auto 50px;
+    width: 90%;
+    padding: 30px 30px 50px;
+    border-radius: 20px;
+    max-width: 500px;
+    h2{
+        text-shadow: 0px -4px 10px #CE5937;
+        text-align: center;
+        color:$aHoverColor;
+    }
+    a{
+        color:black;
+        .hot-trip-card{
+            transition: $transition-duration - 0.25;
+            margin:30px auto 30px;
+            padding: 20px;
+            max-width: 400px;
+            background-color: rgb(233, 233, 233);
+            border-radius: 20px;
+            border:1px solid $aHoverColor;
+            h6{
+                color:gray;
+            }
+            h3{
+                color:$commonColor;
+                text-decoration: underline;
+            }
+            .curency{
+                color: $commonColor;
+                margin-left: 7px;
+                font-size: $navFontSize; 
+            }
+            span{
+                color: gray;
+                i{
+                    margin-right: 5px;
+                    color:$commonColor;
+                }
+            }p{
+                color: gray;
+            }
+            .card-text{
+                color: gray;
+                margin-top: 10px;
+            }
+            
+        }
+    }
+    a:hover{
+        text-decoration: none;
+    }
+    a:hover .hot-trip-card{
+        border-color: red;
+        box-shadow: $buttonBoxShadow;
+    }
+}
+.cost-hot-trip{
+    display: inline-block;
+}
+#all-trips{
+    margin: 30px 20px;
+    h2{
+        text-align: center;
+        color:$aHoverColor;
+    }
+    .trip-wrap{
+        background-color:$headerColorTransperent;
+        border-radius: $buttonBorderRadius;
+        width: 100%;
+        height: 300px;
+        max-width: 400px;
+        margin: 10px auto;
+        border: 1px solid gray;
+        .trip-image{
+            border-top-left-radius: $buttonBorderRadius;
+            border-top-right-radius: $buttonBorderRadius;
+            width: 100%;
+            height: 70%;
+        }
+        .trip-text{
+            h6{
+                color:$commonColor;
+                font-size: $navFontSize;
+                margin-top: 10px;
+                margin-left: 20px;
+            }
+            .reviews{
+                background-color: $commonColor;
+                border-radius: 10px;
+                margin-left: 20px;
+                display: inline-block;
+                padding:4px 10px 6px;
+                color:white;
+            }
+            span{
+                margin-left: 15px;
+                color:gray;
+            }
+        }
+    }
+}
+#all-guides{
+    h2{
+        color:$aHoverColor;
+        margin: 50px 0;
+        text-align: center;
+    }
+    .guide-wrap-card{
+        min-height: 200px;
+        background-color: rgb(221, 221, 221);
+        display: flex;
+        max-width: 600px;
+        margin: 0 auto;
+        flex-direction: column-reverse;
+        border: 1px solid gray;
+        margin:  10px auto;
+    }
+    margin: 30px 20px;
+    .guide-text{
+        padding: 15px 0;
+        h3{
+            margin: 0 auto 10px;
+            width: 90%;
+            color:$commonColor;
+        }
+        .data-guide{
+            text-decoration: underline;
+        }
+        .duration{
+            font-weight: 500;
+            font-size: 19px;
+        }
+        .places-guide{
+
+        }
+
+    }
+    .guide-image{
+        max-width: 400px;
+        height: 100%;
+        img{
+            height: 100%;
+            width: 100%;
+
+        }
+    }
+}
+.sub-alert{
+    position: fixed;
+    top: 140px;
+    right: 0px;
+}
+
+@media (min-width:769px){
+    #hot-trips{
+        max-width: 2560px;
+    }
+    #all-guides .guide-wrap-card{
+        flex-direction: row;
+    }
+    .sub-alert{
+        right: 30px;
+    }
+}
